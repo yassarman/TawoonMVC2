@@ -10,6 +10,7 @@ namespace TaawonMVC.BuildingType
 {
    public interface IBuildingTypeAppService:IApplicationService
     { 
+        // add this line to check for repository
         IEnumerable<GetBuildingTypeOutput> getAllBuildingtype();
         GetBuildingTypeOutput getBuildingTypeById(GetBuidlingTypeInput input);
         Task create(CreateBuildingTypeInput input);
