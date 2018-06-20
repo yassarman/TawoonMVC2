@@ -70,5 +70,32 @@ namespace TaawonMVC.Web.Controllers
             };
             return View("Index",BuildingsViewModel);
         }
+
+
+        public ActionResult EditBuildingModal(int userId)
+        {
+            //get the list of buildingTypes
+            var buildingTypes = _buildingTypeAppService.getAllBuildingtype().ToList();
+            // get the list of neighborhoods
+            var neighborhoods = _neighborhoodAppService.GetAllNeighborhood().ToList();
+
+            var getBuidlingsInput = new GetBuidlingsInput
+            {
+                Id = userId
+            };
+
+            var getBuildingOutput = _buildingsAppService.getBuildingsById(getBuidlingsInput);
+
+            var BuildingViewModel = new BuildingViewModel
+            {
+               Building = getBuildingOutput,
+               BuildingTypes=buildingTypes,
+               Neighborhoods=neighborhoods
+               
+            };
+
+            return View("_EditUserModal", BuildingViewModel);
+
+        }
     }
 }

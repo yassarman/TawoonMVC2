@@ -11,8 +11,8 @@ namespace TaawonMVC.Web.Models.Building
     public class BuildingViewModel
     {
        public  IEnumerable<GetBuildingsOutput> Buildings { get; set; }
-       public  GetBuildingsOutput Building { get; set; }
-      // public  getNeighborhoodOutput neighborhood { get; set; }
+       public   GetBuildingsOutput Building { get; set; }
+    // public  getNeighborhoodOutput neighborhood { get; set; }
        public  IEnumerable<GetBuildingTypeOutput> BuildingTypes { get; set; }
        public  IEnumerable<getNeighborhoodOutput> Neighborhoods { get; set; }
        public  GetBuildingTypeOutput BuildingType { get; set; }

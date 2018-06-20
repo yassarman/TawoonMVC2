@@ -10,6 +10,7 @@
     <text name="AName" value="Arabic Name" />
     <text name="EName" value="English Name" />
     <text name="EditBuildingType" value="Edit Building Type" />
+    <text name="EditBuilding" value="Edit Building" />
     <text name="EditNeighborhood" value="Edit Neighborhood" />
     <text name="CreateNewBuildingType" value="Create New Building Type" />
     <text name="CreateNeighborhood" value="Create New Neighborhood" />

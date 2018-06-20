@@ -2680,6 +2680,7 @@
     <Content Include="Views\BuildingType\Index.js" />
     <Content Include="Views\BuildingType\_EditUserModal.js" />
     <Content Include="Views\Building\Index.js" />
+    <Content Include="Views\Building\_EditUserModal.js" />
     <Content Include="Views\Home\Index.js" />
     <Content Include="Views\Neighborhood\Index.js" />
     <Content Include="Views\Neighborhood\_EditUserModal.js" />
@@ -2867,6 +2868,7 @@
     <Content Include="Views\Neighborhood\Index.cshtml" />
     <Content Include="Views\Neighborhood\_EditUserModal.cshtml" />
     <Content Include="Views\Building\Index.cshtml" />
+    <Content Include="Views\Building\_EditUserModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

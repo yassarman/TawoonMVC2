@@ -28,21 +28,21 @@ namespace TaawonMVC.Buildings.DTO
         [MaxLength(500, ErrorMessage = "Street name should be less than 500 character")]
         public string streetName { get; set; }
 
-        [Required]
+        [Required] 
         public int buildingNo { get; set; }
 
-        [Required]
+        [Required] 
         public int neighborhoodID { get; set; }
-       // public virtual Models.Neighborhood NeighboorHood { get; set; }
+        public virtual Models.Neighborhood NeighboorHood { get; set; }
 
-        [Required]
+        [Required] 
         public int buildingTypeID { get; set; }
-       // public virtual Models.BuildingType BuildingType { get; set; }
+        public virtual Models.BuildingType BuildingType { get; set; }
 
         [MaxLength(500, ErrorMessage = "GISMAP should be less than 500 character")]
         public string GISMAP { get; set; }
 
-        [Required]
+        [Required] 
         public byte houshProperty { get; set; }
 
         [MaxLength(500, ErrorMessage = "House name should be less than 500 character")]

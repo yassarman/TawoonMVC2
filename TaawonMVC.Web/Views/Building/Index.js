@@ -31,7 +31,7 @@
 
             e.preventDefault();
             $.ajax({
-                url: abp.appPath + 'Neighborhood/NeighborhoodEditModal?userId=' + userId,
+                url: abp.appPath + 'Building/EditBuildingModal?userId=' + userId,
                 type: 'POST',
                 contentType: 'application/html',
                 success: function (content) {
@@ -89,10 +89,10 @@
 
         function deleteUser(userId, userName) {
             abp.message.confirm(
-                "Delete Neighborhood '" + userName + "'?",
+                "Delete Building '" + userName + "'?",
                 function (isConfirmed) {
                     if (isConfirmed) {
-                        _NeighborhoodService.delete({
+                        _BuildingService.delete({
                             id: userId
                         }).done(function () {
                             refreshUserList();
