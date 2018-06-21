@@ -191,6 +191,7 @@
     <Compile Include="Models\INeighborhoodManager.cs" />
     <Compile Include="Models\Neighborhood.cs" />
     <Compile Include="Models\NeighborhoodManager.cs" />
+    <Compile Include="Models\UsesOfBuilding.cs" />
     <Compile Include="TaawonMVCConsts.cs" />
     <Compile Include="TaawonMVCCoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />

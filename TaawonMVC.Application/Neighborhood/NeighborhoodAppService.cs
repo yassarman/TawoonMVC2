@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaawonMVC.Buildings;
 using TaawonMVC.Models;
 using TaawonMVC.Neighborhood.DTO;
 
@@ -14,9 +15,11 @@ namespace TaawonMVC.Neighborhood
   public class NeighborhoodAppService:ApplicationService,INeighborhoodAppService
     {
         private readonly Models.INeighborhoodManager _neighborhoodManager;
+        private readonly IBuildingsAppService _BuildingsAppService;
         public NeighborhoodAppService(Models.INeighborhoodManager neighborhoodManager)
         {
             _neighborhoodManager = neighborhoodManager;
+            _BuildingsAppService = new BuildingsAppService();
         }
 
         public async Task create(createNeighborhoodIntput input)
@@ -27,7 +30,7 @@ namespace TaawonMVC.Neighborhood
 
         public void delete(deleteNeighborhoodIntput input)
         {
-            
+          if(  _BuildingsAppService.getBuildingsByNeighborhood(input.Id).Count()<0)
             _neighborhoodManager.Delete(input.Id);
         }
 

@@ -617,3 +617,5 @@ C:\Users\Palestine\Desktop\projectt\TaawonMVC\TaawonMVC\3.4.0\src\TawoonMVC2\Taa
 C:\Users\Palestine\Desktop\projectt\TaawonMVC\TaawonMVC\3.4.0\src\TawoonMVC2\TaawonMVC.EntityFramework\obj\Debug\TaawonMVC.EntityFramework.csproj.CopyComplete
 C:\Users\Palestine\Desktop\projectt\TaawonMVC\TaawonMVC\3.4.0\src\TawoonMVC2\TaawonMVC.EntityFramework\obj\Debug\TaawonMVC.EntityFramework.dll
 C:\Users\Palestine\Desktop\projectt\TaawonMVC\TaawonMVC\3.4.0\src\TawoonMVC2\TaawonMVC.EntityFramework\obj\Debug\TaawonMVC.EntityFramework.pdb
+C:\Users\Palestine\Desktop\projectt\TaawonMVC\TaawonMVC\3.4.0\src\TawoonMVC2\TaawonMVC.EntityFramework\obj\Debug\TaawonMVC.Migrations.addNewColumnToTableBuildings.resources
+C:\Users\Palestine\Desktop\projectt\TaawonMVC\TaawonMVC\3.4.0\src\TawoonMVC2\TaawonMVC.EntityFramework\obj\Debug\TaawonMVC.Migrations.populateUsesOfBuilding.resources

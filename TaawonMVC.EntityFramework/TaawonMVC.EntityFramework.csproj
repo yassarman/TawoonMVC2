@@ -279,6 +279,14 @@
     <Compile Include="Migrations\201806110911029_updateEntityBuildings.Designer.cs">
       <DependentUpon>201806110911029_updateEntityBuildings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806211104097_addNewColumnToTableBuildings.cs" />
+    <Compile Include="Migrations\201806211104097_addNewColumnToTableBuildings.Designer.cs">
+      <DependentUpon>201806211104097_addNewColumnToTableBuildings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806211113504_populateUsesOfBuilding.cs" />
+    <Compile Include="Migrations\201806211113504_populateUsesOfBuilding.Designer.cs">
+      <DependentUpon>201806211113504_populateUsesOfBuilding.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="TaawonMVCDataModule.cs" />
@@ -361,6 +369,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806110911029_updateEntityBuildings.resx">
       <DependentUpon>201806110911029_updateEntityBuildings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806211104097_addNewColumnToTableBuildings.resx">
+      <DependentUpon>201806211104097_addNewColumnToTableBuildings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806211113504_populateUsesOfBuilding.resx">
+      <DependentUpon>201806211113504_populateUsesOfBuilding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

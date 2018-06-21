@@ -15,5 +15,7 @@ namespace TaawonMVC.Buildings
         Task create(CreateBuildingsInput input);
         void update(UpdateBuidlingsInput input);
         void delete(DeleteBuildingsInput input);
+        IEnumerable<GetBuildingsOutput> getBuildingsByNeighborhood(long Neighborhoodid);
+
     }
 }

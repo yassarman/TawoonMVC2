@@ -40,7 +40,21 @@ namespace TaawonMVC.Buildings
             var getBuildingById = _buildings_Manager.getBuildingsById(input.Id);
             var output = Mapper.Map<Models.Buildings, GetBuildingsOutput>(getBuildingById);
             return output;
-        }  
+        }
+        //ADDED BY ZUHDI BALI 
+        //------------------------
+        public IEnumerable<GetBuildingsOutput> getBuildingsByNeighborhood(long Neighborhoodid)
+        {
+            var getAllBuilding = (from Building in getAllBuildings()
+                             where Building.neighborhoodID == Neighborhoodid
+                             select Building).ToList();
+         // onther way to retreive data from oject zuhdi bali 
+          //  getAllBuildings().Select(Building => Building.neighborhoodID== Neighborhoodid).order.ToList();
+
+            return getAllBuilding;
+       
+        }
+        //---------------------------
 
         public void update(UpdateBuidlingsInput input)
         {

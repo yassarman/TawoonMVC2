@@ -26,7 +26,8 @@ namespace TaawonMVC.EntityFramework
         public virtual DbSet<Application> Applications { get; set; }
         public virtual DbSet<Neighborhood> Neighborhoods { get; set; }
         public virtual DbSet<BuildingType> BuildingTypes { get; set; }
-        public virtual DbSet<Buildings> Buildings { get; set; } 
+        public virtual DbSet<Buildings> Buildings { get; set; }
+        public virtual DbSet<UsesOfBuilding> UsesOfBuilding { get; set; }
         /* NOTE:
          *   This constructor is used by ABP to pass connection string defined in TaawonMVCDataModule.PreInitialize.
          *   Notice that, actually you will not directly create an instance of TaawonMVCDbContext since ABP automatically handles it.

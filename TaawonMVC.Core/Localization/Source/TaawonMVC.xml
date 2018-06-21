@@ -6,7 +6,7 @@
     <text name="LookUp" value="Look Ups" />
     <text name="BuildingType" value="Building Type" />
     <text name="Neighborhood" value="Neighborhood" />
-    <text name="Building" value="Building" />
+    <text name="Building" value="Buildings" />
     <text name="AName" value="Arabic Name" />
     <text name="EName" value="English Name" />
     <text name="EditBuildingType" value="Edit Building Type" />

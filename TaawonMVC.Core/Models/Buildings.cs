@@ -32,6 +32,11 @@ namespace TaawonMVC.Models
         // [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int buildingID { get; set; }
 
+        public string buildingName { get; set; }
+
+        [Required]
+        public bool isInHoush { get; set; }
+
 
         [Required]
         public int numOfBuildingUnits { get; set; }
