@@ -15,22 +15,25 @@ namespace TaawonMVC.Neighborhood
   public class NeighborhoodAppService:ApplicationService,INeighborhoodAppService
     {
         private readonly Models.INeighborhoodManager _neighborhoodManager;
-        private readonly IBuildingsAppService _BuildingsAppService;
+        //added by zuhdi for delete function 
+        //private readonly IBuildingsAppService _BuildingsAppService;
         public NeighborhoodAppService(Models.INeighborhoodManager neighborhoodManager)
         {
             _neighborhoodManager = neighborhoodManager;
-            _BuildingsAppService = new BuildingsAppService();
+            // added by zuhdi for delete function 
+            //_BuildingsAppService = new BuildingsAppService();
         }
 
         public async Task create(createNeighborhoodIntput input)
         {
             var output = Mapper.Map<createNeighborhoodIntput, Models.Neighborhood>(input);
-           await _neighborhoodManager.Create(output);
+            await _neighborhoodManager.Create(output);
         }
 
         public void delete(deleteNeighborhoodIntput input)
         {
-          if(  _BuildingsAppService.getBuildingsByNeighborhood(input.Id).Count()<0)
+          // added by zuhdi for delete function 
+          //if(  _BuildingsAppService.getBuildingsByNeighborhood(input.Id).Count()<0)
             _neighborhoodManager.Delete(input.Id);
         }
 

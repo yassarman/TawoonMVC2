@@ -283,9 +283,9 @@
     <Compile Include="Migrations\201806211104097_addNewColumnToTableBuildings.Designer.cs">
       <DependentUpon>201806211104097_addNewColumnToTableBuildings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806211113504_populateUsesOfBuilding.cs" />
-    <Compile Include="Migrations\201806211113504_populateUsesOfBuilding.Designer.cs">
-      <DependentUpon>201806211113504_populateUsesOfBuilding.cs</DependentUpon>
+    <Compile Include="Migrations\201806250954364_addforeignkeytobuildingtable.cs" />
+    <Compile Include="Migrations\201806250954364_addforeignkeytobuildingtable.Designer.cs">
+      <DependentUpon>201806250954364_addforeignkeytobuildingtable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -373,8 +373,8 @@
     <EmbeddedResource Include="Migrations\201806211104097_addNewColumnToTableBuildings.resx">
       <DependentUpon>201806211104097_addNewColumnToTableBuildings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806211113504_populateUsesOfBuilding.resx">
-      <DependentUpon>201806211113504_populateUsesOfBuilding.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806250954364_addforeignkeytobuildingtable.resx">
+      <DependentUpon>201806250954364_addforeignkeytobuildingtable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

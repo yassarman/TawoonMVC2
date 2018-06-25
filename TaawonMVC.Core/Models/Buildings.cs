@@ -23,6 +23,7 @@ namespace TaawonMVC.Models
             buildingNo = 0;
             neighborhoodID = 0;
             buildingTypeID = 0;
+            usesOfBuildingID = 0;
             GISMAP = "";
 
 
@@ -61,6 +62,12 @@ namespace TaawonMVC.Models
         [ForeignKey("BuildingType")]
         public int buildingTypeID { get; set; }
         public virtual BuildingType BuildingType { get; set; }
+
+        [Required]
+        [ForeignKey("UsesOfBuildingID")]
+        public int usesOfBuildingID { get; set; }
+        public virtual UsesOfBuilding UsesOfBuildingID { get; set; }
+
         
 
         [MaxLength(500, ErrorMessage = "GISMAP should be less than 500 character")]
